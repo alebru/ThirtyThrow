@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        android:layout_gravity="center"
+        android:id="@+id/info_bar"
+        android:text="@string/info_bar">
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/die1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white1">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/die2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white1">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/die3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white1">
+        </ImageButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/die4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white1">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/die5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white1">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/die6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white1">
+        </ImageButton>
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="1"
+        android:columnCount="2">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_gravity="left"
+                android:spinnerMode="dropdown"
+                android:entries="@array/score_array"
+                android:prompt="@string/score_prompt" />
+
+        <Button
+            android:id="@+id/throw_button"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:drawablePadding="5dp"
+            android:text="@string/throw_button"></Button>
+
+
+    </GridLayout>
+
+
+</LinearLayout>

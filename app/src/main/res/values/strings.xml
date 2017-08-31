@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ThirtyThrow</string>
+    <string name="throw_button">Throw</string>
+    <string name="new_button">New game</string>
+    <string name="info_bar">Round 1</string>
+    <string name="score_prompt">Select scoring scheme</string>
+    <string-array name="score_array">
+        <item>Low</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>
